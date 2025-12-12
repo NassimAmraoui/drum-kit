@@ -1,0 +1,46 @@
+
+body{
+   background-image: url("bg-drum.jpg");
+   background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+   
+
+.key{
+    color: white;
+    border: 2px solid rgb(151, 47, 47);
+    width: 20px;
+    height: 20px;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgb(255, 0, 0);
+    margin-top: 300px;
+    margin-left: 6%;
+
+}
+
+.active{
+    margin-top: 290px;
+    box-shadow: 15px 10px 5px rgb(255, 0, 0);
+    transition: margin-top 1s,box-shadow 1s;
+
+}
+.disactive{
+    margin-top: 300px;
+    box-shadow: 0px 0px 20px rgb(255, 0, 0);
+    transition: margin-top 0.8s,box-shadow 0.8s;
+}
+
+@media (max-width:500px) {
+    body{
+        padding: 30px;
+    }
+    .key{
+        margin-left: 5%;
+    }
+  
+}
