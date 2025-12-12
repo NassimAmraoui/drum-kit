@@ -1,4 +1,5 @@
 //generate html code
+alert("welcome in this site click or touch Letter to make sounds");
 let arrKey = ["Q","S","D","F","G","H","J","K","L","M"];
 let codeHtml = ``;
 arrKey.forEach((key)=>{
@@ -59,4 +60,5 @@ document.addEventListener("keypress",(e)=>{
 function audioKey(code){
     const note = new Audio(`audio/${code}.wav`);
     note.play();
+
 }
